@@ -11,9 +11,10 @@ repetir {puts "Esta linha será impressa duas vezes!"}
 def bloco
     # Verifica se foi passado o bloco, se for verdadeiro/tiver passado, então executa o bloco uma única vez.
     if block_given?
+        # Uma única vez.
         yield
     else
-        puts "Não foi passado bloco para execução"
+        puts "Não foi passado bloco para execução!"
     end
 end
 
